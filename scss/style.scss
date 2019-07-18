@@ -1,0 +1,230 @@
+@import 'reset.scss';
+@import 'variable.scss';
+@import 'bases.scss';
+@import 'media.scss';
+@import 'mixins.scss';
+body{
+  position: relative;
+}
+header{
+  .cont{ 
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: $width;
+    height: $height;
+    background-image: url(../images/2j.jpg);
+    @include backg-img-atr(cover,center,no-repeat);
+  }
+  .outher{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: $width;
+    height: $height;
+    background: rgba(0,0,0,0.7);
+    z-index: 0;
+  }
+  .nav-link{
+    font-size: $font-sz;
+    color: $color-w;
+    @extend %text-upper;
+  }
+  .navbar{
+    @include  transformation(all, 0.2s, ease);
+
+    &:hover{
+      padding: 10px;
+      background-color: black;
+      border-radius: 30px;
+      border: 8px solid $color-w;
+    }
+    li{
+        a{
+          font-family: 'Arimo', sans-serif;
+          @include  transformation(all, 0.3s, ease);
+          &:hover{
+          color:$color-w;
+          transform: scale(1.1);
+          color:black;
+          border-bottom: 3px dotted black;
+          border-top: 3px dotted black;
+          background-color: white;
+          border-radius: 10%
+        }
+      }
+    }
+  }
+  .logo{
+    font-family: 'Butcherman', cursive;
+    animation: anime 0.7s ease; 
+    font-size: $font-sz+20;
+    color: $color-w;
+    @extend %text-dec-none;
+    @include  transformation(all, 0.5s, ease);
+    &:hover{
+      transform: scale(1.3);
+      color:$lightgrey;
+    }
+     
+  }
+  .text{
+    
+font-family: 'Crete Round', serif;
+
+    @extend %text-center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1{
+      color: $color-w;
+    }
+    &::after{
+      content:"";
+      display: block;
+      width:30%;
+      height: 3px;
+      background-color: $bg-color;
+      align-items: center;
+      position: absolute;
+      top: 120%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  .text2{font-family: 'Courgette', cursive;
+    position: absolute;
+  	top: 61%;
+ 	  left: 50%;
+     transform: translate(-50%);
+     p{
+       z-index: 11;
+       color: $color-w;
+       @extend %text-center;
+       opacity: 0.5;
+     }
+  }
+}
+section{
+  .container{
+    h1, h2, .p_teg{
+      @extend %text-center;
+    }
+    h2{
+      &:after{
+        content: "";
+        display: block;
+        width: $width2;
+        height: $small-height;
+        background-color: $bg-color;
+        margin: 10px auto;
+      }
+    }
+ 
+  }
+}
+.section1{
+  .bg-color{
+    background: rgba(0,0,0,0.05);
+  }
+  .box2{
+    width: 30%;
+  }
+  .back-img{
+    height: $width;
+    width: $width;
+    background-image: url(../images/1j.jpg);
+    @include backg-img-atr(cover, center, no-repeat);
+  }
+  #demo{
+    @include  transformation(all, 0.3s, ease);
+  }
+}
+.section2{
+  .bac-pic{
+    @extend %overflow;
+  }
+}
+.section3{
+    .border-img{
+      @include  radius(50%);
+      @include border(5px, solid, $lightgrey );
+      width: $width/2;
+    
+      z-index: 111;
+    }
+    .style_p{
+      margin-bottom: 0;
+    }
+    .style_h{
+      @include font(100%);
+    }
+    .circle{
+      @include  radius(50%);
+      @include border(5px, solid, $lightgrey );
+      width: $width/2;
+      height: $width;
+    }
+    .container{
+      .h1{
+        &:after{
+          content: " ";
+          display: block;
+          width:  $width/10;
+          height: $small-height;
+          background-color:$lightblue;
+          margin: 20px auto;
+        }
+      }
+    }
+}
+.section4{background: rgba(0,0,0,0.05);
+  .awesome-team{
+    .name, p{
+      font-family: 'Kaushan Script', cursive;
+    }
+    a{@include  transformation(all, 0.3s, ease);
+      i{
+        color:$black;
+      }
+      &:hover{
+        transform: scale(1.2);
+      }
+    } 
+    .black-background{
+      height: 250px;
+      width: 250px;
+      @include radius(50%);
+      background-color: $black;
+    }
+    .h11{
+      &:after{
+        width: 15%;
+        height: $small-height;
+        display: block;
+        background-color: $lightblue;
+        margin: 20px auto;
+      }
+     }
+  }
+}
+footer{
+   p{
+     a{
+      color:$color-w;
+       
+     }
+   }
+    .line{
+      &:after{
+        content: "";
+        display: block;
+        background-color: $lightblue;
+        width: 100%;
+        height:   $small-height;
+        // margin-bottom:50px;
+      }
+    }
+}
+ 

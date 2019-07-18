@@ -1,0 +1,22 @@
+@import 'reset.scss';
+@import 'variable.scss';
+@import 'bases.scss';
+ 
+@mixin backg-img-atr($size, $position, $repeat) {
+    background-size: $size;
+    background-position: $position;
+    background-repeat: $repeat;
+}
+ 
+@mixin transformation($all,$time, $wo){
+    transition: $all $time $wo;
+}
+@mixin radius($border-radius){
+    border-radius:$border-radius;
+}
+@mixin border($bord_px, $bord_form, $bord_color){
+    border: $bord_px $bord-form $bord_color;
+}
+@mixin font($font-size) {
+     font-size: $font-size;   
+}

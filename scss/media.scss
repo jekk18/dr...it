@@ -1,0 +1,74 @@
+@import 'reset.scss';
+@import 'variable.scss';
+@import 'bases.scss';
+@import 'mixins';
+
+@media screen and (max-width: 1024px){
+    .box1{
+      width: 100%;
+    }
+ 
+    .box2 {
+      display: none;
+    }
+ 
+  }
+ @media screen and(max-width:1200px){
+   iframe{
+     display: none;
+   }
+   #about{
+     display: none;
+   }
+ }
+  @media screen and (max-width: 992px){
+    .text , .text2{
+      display: none;
+    }
+  
+ 
+  }
+ @media screen and (max-width: 768px){
+   .bac-pic .img1{
+     display: none;
+   }
+ }
+ @media screen and(max-width:330px){
+   .section2{
+     .amazing-portfolio{
+       h1{
+         font-size: 100%;
+         font-weight: bold;
+       }
+     }
+   }
+ }
+ @media screen and(max-width:295px){
+    .awesome-team{
+      .h11{
+        font-size: 100%;
+      }
+    }
+}
+@media screen and(max-width:235px){
+  #contact{
+    display: none;
+  }
+  #images, #team{
+    display: none;
+  }
+}
+@media screen and(max-width:250px){
+  #home , #expertise{
+    display: none;
+  }
+
+}
+ @media screen and(max-width:275px){
+   .section4{
+    .black-background{
+      display: none;
+      width: $width;
+    }
+   }
+ }

@@ -1,0 +1,20 @@
+@import 'variable.scss';
+
+ %text-upper{
+     text-transform: uppercase;
+ }
+ %text-center{
+    text-align: center; 
+ }
+ %text-dec-none{
+     text-decoration: none;
+ }
+ %overflow{
+     overflow: hidden;
+ }
+
+
+ @keyframes anime{
+     from {transform: rotate(0);}
+     to {transform: rotate(360deg);}
+ } 
