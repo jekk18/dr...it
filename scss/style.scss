@@ -15,6 +15,7 @@ header{
     height: $height;
     background-image: url(../images/2j.jpg);
     @include backg-img-atr(cover,center,no-repeat);
+    
   }
   .outher{
     position: absolute;
